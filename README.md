@@ -86,12 +86,9 @@ Se pretende **entender el comportamiento de los clientes** y establecer los prim
 
 ## ✍️ Autor
 
-- **Joji**  
+- **Yosua Corella**  
   Técnico en Ciencia de Datos | Estudiante de Ingeniería Química  
   _“Transformar datos en decisiones estratégicas.”_
 
 ---
 
-## 📌 Licencia
-
-Este proyecto es de uso académico y formativo. Puedes reutilizarlo con atribución.
