@@ -87,6 +87,14 @@ El proyecto contiene los siguientes archivos y componentes:
 
 ---
 
+## ✍️ Autor
+
+- **Yosua Corella**  
+  Técnico en Ciencia de Datos | Estudiante de Ingeniería Química  
+  _“Transformar datos en decisiones estratégicas.”_
+
+---
+
 ## ▶️ Instrucciones para Ejecutar el Proyecto
 
 1. Clona este repositorio o descarga los archivos localmente.
@@ -96,16 +104,8 @@ El proyecto contiene los siguientes archivos y componentes:
    - `diccionario.md`
 4. Instala las bibliotecas necesarias si corrés localmente:
 ```bash
-pip install pandas matplotlib seaborn numpy
+ - `pip install pandas matplotlib seaborn numpy`
 
 
----
 
-## ✍️ Autor
-
-- **Yosua Corella**  
-  Técnico en Ciencia de Datos | Estudiante de Ingeniería Química  
-  _“Transformar datos en decisiones estratégicas.”_
-
----
 
