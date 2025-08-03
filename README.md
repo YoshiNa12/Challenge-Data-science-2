@@ -104,7 +104,7 @@ El proyecto contiene los siguientes archivos y componentes:
    - `diccionario.md`
 4. Instala las bibliotecas necesarias si corrés localmente:
 ```bash
- - `pip install pandas matplotlib seaborn numpy`
+pip install pandas matplotlib seaborn numpy
 
 
 
