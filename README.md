@@ -63,24 +63,6 @@ Se pretende **entender el comportamiento de los clientes** y establecer los prim
 - Boxplots y violín plots para variables como `Total Gastado`, `Meses Contratados`, `Cargos Mensuales`.
 - Anotaciones de cuartiles y ajuste de ejes para mejorar la legibilidad.
 
----
-
-## 📌 Principales Hallazgos
-
-- La evasión se da principalmente en clientes con contratos mensuales y pagos electrónicos.
-- El gasto total promedio es mayor en los clientes evadidos, lo que sugiere insatisfacción acumulada.
-- Servicios como soporte técnico y seguridad en línea reducen la tasa de evasión.
-- No hay diferencia significativa entre géneros.
-
----
-
-## ✅ Recomendaciones
-
-1. **Fomentar contratos anuales** mediante promociones o descuentos.
-2. **Incentivar el uso de servicios de valor agregado** como soporte técnico y seguridad.
-3. **Mejorar la experiencia con pagos electrónicos**, ya que es el método más asociado a la evasión.
-4. **Segmentar campañas de retención** enfocadas en clientes de alto gasto mensual.
-5. **Desarrollar un modelo predictivo de Churn**, ahora que se conocen los factores clave.
 
 ---
 
