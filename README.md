@@ -13,10 +13,21 @@ Se pretende **entender el comportamiento de los clientes** y establecer los prim
 
 ---
 
+## 🧾 Estructura del Proyecto
+
+El proyecto contiene los siguientes archivos y componentes:
+
+- **`TelecomX_Data.json`**: archivo principal de datos con información de clientes y servicios.
+- **`TelecomX_diccionario.md`**: glosario con la descripción de las variables contenidas en el dataset.
+- **Notebook `TelecomX_YCZ.ipynb`**: archivo principal que contiene todo el análisis de datos, visualizaciones y comentarios explicativos.
+- **Este archivo `README.md`**: documentación completa del proyecto.
+
+---
+
 ## 🧪 Herramientas Utilizadas
 
 - Python 3.x
-- Google Colab / Jupyter Notebook
+- Google Colab 
 - Bibliotecas:
   - `pandas` para manipulación de datos
   - `matplotlib` y `seaborn` para visualización
@@ -24,44 +35,68 @@ Se pretende **entender el comportamiento de los clientes** y establecer los prim
 
 ---
 
-## 🔍 Etapas del Proyecto
+## 📊 Análisis Exploratorio de Datos
 
 ### 1. 📥 Carga y Exploración Inicial
 - Montaje de Google Drive.
-- Carga del archivo JSON en un DataFrame de `pandas`.
-- Exploración de las columnas y tipos de datos.
-- Consulta del diccionario para entender cada variable.
+- Carga del archivo JSON en un DataFrame.
+- Exploración de columnas y tipos de datos.
+- Revisión del diccionario para entender las variables.
 
 ### 2. 🧹 Limpieza y Tratamiento de Datos
-- Manejo de valores nulos (`charges.total` tenía 11).
-- Eliminación de duplicados según el identificador de cliente.
-- Estandarización de nombres de columnas y valores.
-- Conversión de columnas binarias (`Sí/No`) a `1/0` cuando fue necesario.
-- Creación de nueva variable: `Cuentas_Diarias`.
+- Eliminación de nulos en `charges.total`.
+- Eliminación de duplicados por ID de cliente.
+- Estandarización de nombres de columnas.
+- Traducción de valores categóricos (Sí/No, Male/Female, etc.).
+- Conversión de variables binarias a 1 y 0.
+- Creación de nueva columna: `Cuentas_Diarias`.
 
-### 3. 📊 Análisis Exploratorio de Datos (EDA)
-#### Análisis Descriptivo
-- Estadísticas de tendencia central y dispersión para variables numéricas.
-  
-#### Distribución del Churn
-- Gráficos de barras y pastel mostrando proporción de evasión vs suscripción.
-- Etiquetas traducidas a español.
+### 3. 📈 Visualizaciones y Hallazgos
 
-#### Variables Categóricas
-- Análisis visual de variables como:
-  - Género
-  - Tipo de contrato
-  - Método de pago
-  - Tipo de internet
-  - Soporte técnico
-  - Seguridad en línea
-  - Líneas múltiples
-- Todos los gráficos traducidos al español con porcentajes sobre cada barra.
-- Subgráfica combinada de todos los análisis categóricos.
+#### Distribución de Evasión
+- Gráficos de barras y pastel para mostrar proporción entre evadidos y suscritos.
+- Etiquetas en español y conteo visible en cada barra.
 
-#### Variables Numéricas
-- Boxplots y violín plots para variables como `Total Gastado`, `Meses Contratados`, `Cargos Mensuales`.
-- Anotaciones de cuartiles y ajuste de ejes para mejorar la legibilidad.
+#### Análisis de Variables Categóricas
+- Gráficos agrupados para: Género, Contrato, Internet, Seguridad, Soporte, entre otros.
+- Gráficas traducidas con porcentajes y etiquetas claras.
+- Subgráfica final con todos los gráficos categóricos juntos.
+
+#### Análisis de Variables Numéricas
+- `Cargos Totales`, `Cargos Mensuales` y `Meses Contratados` según condición de churn.
+- Gráficos: histogramas, violin plots y boxplots con cuartiles anotados.
+
+---
+
+## 📌 Principales Hallazgos
+
+- Mayor evasión en clientes con **contratos mensuales** y **pago electrónico**.
+- Clientes con **menor tiempo contratado** y **mayores gastos mensuales** tienen más riesgo de cancelar.
+- **Servicios de soporte técnico y seguridad en línea** se asocian a menor evasión.
+- No hay diferencias relevantes entre **géneros** o número de líneas.
+
+---
+
+## ✅ Recomendaciones Estratégicas
+
+1. Ofrecer **descuentos o beneficios** por contratos anuales.
+2. Incentivar el uso de **servicios de soporte y seguridad digital**.
+3. Evaluar la experiencia de usuarios con pagos electrónicos.
+4. Dirigir campañas de retención a clientes de **alto gasto mensual**.
+5. Continuar con el desarrollo de un modelo **predictivo de churn**.
+
+---
+
+## ▶️ Instrucciones para Ejecutar el Proyecto
+
+1. Clona este repositorio o descarga los archivos localmente.
+2. Abre el archivo `TelecomX_EDA.ipynb` en Google Colab o Jupyter Notebook.
+3. Asegúrate de tener disponibles:
+   - `TelecomX_Data.json`
+   - `diccionario.md`
+4. Instala las bibliotecas necesarias si corrés localmente:
+```bash
+pip install pandas matplotlib seaborn numpy
 
 
 ---
